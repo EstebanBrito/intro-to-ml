@@ -15,13 +15,17 @@ Librerías utilizadas:
 * matplotlib
 * scikit-learn
 
-## Preparar el entorno
+## Descargar el repo
 
-Clona el repositorio o descárgalo de GitHub
+Clona el repositorio o descárgalo de GitHub (https://github.com/EstebanBrito/intro-to-ml)
 
 ```bash
 $ git clone <URL-del-repo>
 ```
+
+## Utilerías del sistema.
+
+Si ya tienes instalado pip y virtualenv, salta a la sección "Preparando el entorno"
 
 Instala la herramienta pip (gestor de paquetes de Python). Visita https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/ para más información.
 
@@ -38,40 +42,24 @@ $ sudo apt install python-pip
 
 Dependiendo de cuál versión de pip instalaste, usa "pip3" o "pip" en las siguientes instrucciones.
 
-Instala la herramienta virtualenv (gestor de entornos virtuales de Python). Más información sobre virtualenv aquí: https://tecadmin.net/use-virtualenv-with-python3/
-
-```bash
-$ pip3 install virtualenv
-```
-
-Crea un entorno virtual (dentro de la carpeta del proyecto)
-
-```bash
-$ virtualenv -p python3 env
-```
-
-Activa el entorno
-
-```bash
-$ source env/bin/activate
-```
+## Preparando el entorno
 
 Instala las librerías
 
 ```bash
-$ (env) pip3 install -r requirements.txt
+$ python3 -m pip3 install -r requirements.txt
 ```
 
 En caso de fallo, instala las librerías de forma manual
 
 ```bash
-$ (env) pip3 install jupyter numpy pandas matplotlib scikit-learn
+$ python3 -m pip3 install jupyter numpy pandas matplotlib scikit-learn
 ```
 
-Activa el servidor de Jupyter (para acceder a las notas del talles)
+Activa el servidor de Jupyter (para acceder a las notas del talleres)
 
 ```bash
-$ (env) jupyter notebook
+$ (jupyter notebook
 ```
 
 Se abrirá un navegador. Si no sucede, toma la URL que se muestra en consola y accede a ella manualmente en el navegador.
